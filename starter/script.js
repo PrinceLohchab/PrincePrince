@@ -14,6 +14,9 @@ function processRegistration(event) {
   let password = document.getElementById("password").value;
   //console.log(username);
 
+  let successMessage = document.getElementById("successMessage");
+  successMessage.style.display = "block";
+
   localStorage.setItem("RegisteredUsers", username + ":" + password + ";");
 }
 
